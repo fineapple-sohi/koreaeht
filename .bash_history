@@ -1,0 +1,50 @@
+#1374458834
+LS
+#1374458837
+ls
+#1374458871
+mysql -ukoreaeht -p dbkoreaeht -h 211.43.203.83 < koreaehtcom_DB_20130718.sql
+#1374458881
+vi koreaehtcom_DB_20130718.sql
+#1374458899
+mysql -ukoreaeht -p dbkoreaeht -h 211.43.203.83 < koreaehtcom_DB_20130718.sql
+#1374458937
+vi koreaehtcom_DB_20130718.sql
+#1374458961
+grep -Ir koreaehtcom *
+#1374458970
+vi gboard/dbconfig.php
+#1374459105
+ls
+#1374459114
+cd renewal
+#1374459115
+ls
+#1374459127
+cd include/
+#1374459128
+ls
+#1374459130
+cd ..
+#1374459130
+ls
+#1374459138
+cd design
+#1374459139
+ls
+#1374459143
+cd ..
+#1374459144
+ls
+#1374459148
+cd gong
+#1374459148
+ls
+#1374459150
+cd ..
+#1374459151
+ls
+#1374467454
+pwd
+#1374473412
+exit

@@ -1,0 +1,84 @@
+
+/************************************************************
+*   LINK
+************************************************************/
+A:link {color:#666666;text-decoration:none;}
+A:visited {color:#666666;text-decoration:none;}
+A:active {color:#666666;text-decoration:none;}
+A:hover {color:#333333; text-decoration:none; position:relative;}
+
+
+/************************************************************
+*   TAG
+************************************************************/
+
+BODY {scrollbar-face-color: #FFFFFF;scrollbar-highlight-color: #999999;scrollbar-3dlight-color: #FFFFFF;scrollbar-shadow-color: #999999;scrollbar-darkshadow-color: #FFFFFF;scrollbar-track-color: #FFFFFF;scrollbar-arrow-color: #999999;}
+body {margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px ; background-color:#FFFFFF; }
+
+DIV , FORM , CENTER , OPTION , PRE , BLOCKQUOTE ,  TR  ,  BR , TABLE {font-size:9pt; font-family:µ¸À½,±¼¸²,verdana,tahoma; color:#747474; line-height:140%}
+TD {font-size:11px; color: #606060; font-family: "tahoma", "Arial", "Helvetica", "sans-serif";  text-decoration: none; line-height:155%;letter-spacing: 0pt} 
+
+img { border : 0; }
+form { margin : 0; }
+
+select, textarea {font-family:µ¸¿ò, seoul, arial, helvetica; border-width:1; border-color:#cccccc; border-style:groove; font-size:12px; color:#616161; margin-top:0; margin-bottom:0; line-height:125%;padding-left:4}
+
+.button		{ height:20px; border-width:1; border-style:ridge; border-color:#d0d0d0; background-color:#dfdfdf; cursor: hand;}
+.file {font-family:µ¸¿ò; font-size:12px; color:#545454; border:solid 1px #cccccc; height:18px;}
+.noline { border-width:0 }
+
+
+/************************************************************
+*   CUSTOM       
+************************************************************/
+
+/* bold ******************/
+ b { color:#636563;}
+ b.w {color:#FFFFFF; letter-spacing: -1pt;}
+ b.gb {color:#cee4fa; letter-spacing: -1pt;}
+
+/* text ******************/
+.dod8{font-size:8pt; font-family:µ¸¿ò;letter-spacing: 0pt}
+.dod8_{font-size:8pt; font-family:µ¸¿ò;letter-spacing: -1pt;}
+.gul8_{font-size:8pt; color: #828282;font-family:±¼¸²;letter-spacing: -1pt}
+
+
+/* align ******************/
+.c {text-align:center;}
+.cv {text-align:center; vertical-align:top;}
+.cb {text-align:center; vertical-align:bottom;}
+.c_b {text-align:center; font-weight:bold;}
+.r {text-align:right;}
+.rb {text-align:right; vertical-align:bottom;}
+.rv {text-align:right; vertical-align:top;}
+.r_5 {text-align:right; padding: 0 5 0 0;}
+.rb_3 {text-align:right;vertical-align:bottom; padding: 0 3 0 0;}
+.rb_15 {text-align:right;vertical-align:bottom; padding: 0 25 0 0;}
+.r_10 {text-align:right; padding: 0 10 0 0;}
+.r_20 {text-align:right; padding: 0 20 0 0;}
+.l_20 {text-align:left; padding: 0 0 0 20;}
+.l_10 {text-align:left; padding: 0 0 0 10;}
+.l_5 {text-align:left; padding: 0 0 0 5;}
+.l_7 {text-align:left; padding: 0 0 0 7;}
+
+
+/* form ******************/
+.textarea1 {font-size:9pt; BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; BORDER-LEFT: #999999 1px solid; COLOR: #565656; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR:#F1F8FD;} 
+.input {font-family: "µ¸¿ò"; BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 12px; BORDER-LEFT: #999999 1px solid; COLOR: #565656; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR:#F1F8FD;}
+.input1 {font-family: "µ¸¿ò";   font-size:9pt; height:20;  border:solid 0px;   PADDING-LEFT: 3px; COLOR: #565656; BACKGROUND-COLOR:#F1F8FD;} 
+.input_line {font-family:µ¸À½; font-size:9pt; height:17; color:#747474; border:solid 1px; background-color:#FFFFFF; border-top-color:#FFFFFF; border-right-color:#FFFFFF; border-left-color:#FFFFFF; border-bottom-color:#737573; padding:0; 
+
+
+/* margin *******************/
+.ml_20 {text-align:left; padding:0 0 0 20;}
+
+
+/* ETC ********************/
+.logo {text-align:left; padding:5 62 0 53;}
+.newst {text-align:left; padding:13 0 7 0;}
+.Box03 {height: 14px; 	text-decoration: none; background-color: #E7E7E7; border: 0px solid #FFFFFF;	margin: 0px;}
+.TxtTahoma {FONT-SIZE: 11px; FONT-FAMILY: "Tahoma, µ¸¿ò";}
+.st {text-align:left; padding:48 0 0 10; vertical-align:top;}
+.sst {text-align:left; padding:0 0 3 100;}
+.sb {FONT-SIZE: 9px; FONT-FAMILY: "verdana"; color:#999999; padding: 0 0 0 30; }
+.sc {FONT-SIZE: 9px; FONT-FAMILY: "verdana"; color:#333333; padding: 0 0 0 20; }

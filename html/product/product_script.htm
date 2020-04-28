@@ -1,0 +1,137 @@
+<script>
+    var nscp = (navigator.appName == "Netscape")
+    var ismc = (navigator.appVersion.indexOf("Mac") != -1)
+    var vers = parseFloat(navigator.appVersion.substring(22,25))
+
+    function getObj(obj) {
+       if (nscp) {
+           compLayr = document.layers[obj]
+       }else{
+           compLayr = eval("document.all." + obj + ".style")
+       }
+       return compLayr
+    }
+
+    function show(layr){
+       obj = getObj(layr)
+       obj.visibility = "visible"
+    }
+
+    function hide(layr){
+       obj = getObj(layr)
+       obj.visibility = "hidden"
+    }
+
+    function menuRoll(which,status,total){
+       if (status){
+           currentMenuChoice = which
+           show("info" + currentMenuChoice)
+           checkinfo(total)
+       }
+    }
+
+    function fontRoll(which,status,total){
+       if (status){
+           currentMenuChoice = which
+           obj = getObj("font"+currentMenuChoice)
+           obj.color = "blue"
+           checkfont(total)
+       }
+    }
+ 
+    function checkinfo(total){
+       for(r=1;r<= total ;r++){
+           if(r != currentMenuChoice){
+               hide("info" + r)
+           }
+       }
+       setTimeout("checkinfo()",50)
+    }
+
+    function checkfont(total){
+       for(r=1;r<= total ;r++){
+           if(r != currentMenuChoice){
+               obj = getObj("font"+r)
+               obj.color = "#D6D6D6"
+           }
+       }
+       setTimeout("checkfont()",50)
+    }
+  </script>
+
+  <script>
+//여기의 tab_cnt는 이미지 메뉴의 수입니다.(롤오버되는 이미지만)
+//그래서 메뉴의 갰수가 바뀌는 경우 꼭 바꾸어 주어야 합니다.(중요)
+//안바꿔주면 에러납니다.
+var tab_cnt = 6;
+
+// 일반 이미지입니다. 원하는 메뉴 갯수만큼 만들어 주어야 합니다.
+//이미지의 이름은 꼭 images_tab/htab{순번}0.gif 형식이어야 합니다.
+// 순번은 1부터 시작하고요.
+img_url = new Array();
+img_url[0] = new Image();
+img_url[1] = new Image();
+img_url[2] = new Image();
+img_url[3] = new Image();
+img_url[4] = new Image();
+img_url[5] = new Image();
+img_url[0].src = "/image/ElecH.gif";
+img_url[1].src = "/image/FireR.gif";
+img_url[2].src = "/image/TherC.gif";
+img_url[3].src = "/image/FireDD.gif";
+img_url[4].src = "/image/FireSS.gif";
+img_url[5].src = "/image/OtherP.gif";
+
+// 마우스 오버시의 이미지입니다. 원하는 메뉴 갯수만큼 만들어 주어야 합니다.
+//이미지의 이름은 꼭 images_tab/htab{순번}1.gif 형식이어야 합니다.
+// 순번은 1부터 시작하고요.
+img_a_url = new Array();
+img_a_url[0] = new Image();
+img_a_url[1] = new Image();
+img_a_url[2] = new Image();
+img_a_url[3] = new Image();
+img_a_url[4] = new Image();
+img_a_url[5] = new Image();
+img_a_url[0].src = "/image/ElecHup.gif";
+img_a_url[1].src = "/image/FireRup.gif";
+img_a_url[2].src = "/image/TherCup.gif";
+img_a_url[3].src = "/image/FireDDup.gif";
+img_a_url[4].src = "/image/FireSSup.gif";
+img_a_url[5].src = "/image/OtherPup.gif";
+
+var menu_url = new Array();
+menu_url[0] = "/product/EHTS/EHTS_intro.htm"
+menu_url[1] = "/product/FR/FR_1.htm"
+menu_url[2] = "/product/TH/TH_1.htm"
+menu_url[3] = "/product/FD/FD_1.htm"
+menu_url[4] = "/product/FS/FS_1.htm"
+menu_url[5] = "/product/Other/Other_Cate.htm"
+
+var main_url = new Array();
+main_url[0] = "/product/EHTS/EHTS_intro.htm"
+main_url[1] = "/product/FR/FR_1.htm"
+main_url[2] = "/product/TH/TH_1.htm"
+main_url[3] = "/product/FD/FD_1.htm"
+menu_url[4] = "/product/FS/FS_1.htm"
+menu_url[5] = "/product/Other/Other_Cate.htm"
+
+//이부분이 마우스 오버시 처리하는 부분입니다.
+//당근, 직접 이름을 프로그램안에 넣었기 때문에 이름을 같이 해 주어야 합니다.
+// 이말은 tab10.gif 이 마우스 오버시 tab11.gif로 바뀌고 나머지는 전부
+//원위치 하게 되는거죠(tab{순번}0.gif)
+
+function changetab (no) {
+  for (i=1; i<= tab_cnt;i++){
+    obj = eval("document.images.tab"+i);
+    if (i == no){
+	  //obj.src = "images_tab/htab"+i+"1.gif";
+	  obj.src = img_a_url[i-1].src;
+	  //parent.left.location.href  = menu_url[i-1];
+	  //location.href  = menu_url[i-1];
+    }else{
+	  //obj.src = "images_tab/htab"+i+"0.gif";
+	  obj.src = img_url[i-1].src;
+	}
+  }
+}
+</script>

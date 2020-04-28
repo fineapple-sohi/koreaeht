@@ -1,0 +1,16 @@
+.line_bg {  background-color: #EBF3EE; }
+
+/* ¸®½ºÆ® */
+.title  { font-family:µ¸¿ò; font-size:9pt; color:#526D47; font-weight:bold; }
+.list_nt  { font-family:µ¸¿ò; font-size:9pt; color:#526D47; font-weight:bold; }
+.no  { font-family:"Tahoma"; font-size:7pt; color:#666666; font-weight:bold; }
+.num  { font-family:"Tahoma"; font-size:8pt; color:#666666; }
+.num3  { font-family:"Tahoma"; font-size:8pt; color:#A6CAAC; font-weight:bold; }
+
+/* ºä */
+
+.bg_img {
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.tma8 { color: #666666; font-family: "Tahoma"; font-size: 8pt; }
